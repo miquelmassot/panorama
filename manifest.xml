@@ -1,0 +1,16 @@
+<package>
+  <description brief="panorama">
+
+     panorama
+
+  </description>
+  <author>miquel</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/panorama</url>
+  <depend package="roscpp" />
+  <depend package="opencv2" />
+
+</package>
+
+
