@@ -28,30 +28,23 @@ int main(int argc, char* argv[])
   std::cout << "\n[PANORAMA]: creation of a panorama from a two or more images." << std::endl;
 
   if (argc < 3){
-    std::cout << "\tUsage: " << argv[0] << " <input images> <output>" << std::endl;
+    std::cout << "\tUsage: " << argv[0] << " output.jpg input1.jpg input2.jpg... " << std::endl;
     return -1;
   }
     
   num_imgs = argc - 2;
-  std::string output = argv[argc-1];
+  std::string output = argv[1];
   std::vector<cv::Mat> imgs(num_imgs);
 
   std::cout << "[I] Input: " << num_imgs << " images." << std::endl;
-  
-//  std::cout << "[I] Opening image " << argv[1] << std::endl;
-//  imgs[0] = cv::imread(argv[1]);
-//  std::cout << "[I] Image is " << imgs[0].cols << "x" << imgs[0].rows << std::endl;
-//  std::cout << "[I] Opening image " << argv[2] << std::endl;
-//  imgs[1] = cv::imread(argv[2]);
-//  std::cout << "[I] Image is " << imgs[1].cols << "x" << imgs[1].rows << std::endl;
 
   //try to open the images:
   for(int i=0; i<num_imgs; i++)
   {
-    std::cout << "[I] Opening image " << argv[1+i] << std::endl;
+    std::cout << "[I] Opening image " << argv[2+i] << std::endl;
     try
     {
-      imgs[i]=cv::imread(argv[1+i]);
+      imgs[i]=cv::imread(argv[2+i]);
       if( !imgs[i].data )
          throw "Could not read image";
       std::cout << "[I] Image is " << imgs[i].cols << "x" << imgs[i].rows << std::endl;

@@ -1,1 +1,3 @@
-panorama
+[PANORAMA]: creation of a panorama from a two or more images.
+Usage: rosrun panorama panorama output.jpg input1.jpg input2.jpg...
+
