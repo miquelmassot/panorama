@@ -30,3 +30,6 @@ set(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib)
 #target_link_libraries(example ${PROJECT_NAME})
 
 rosbuild_add_executable(panorama src/panorama.cpp)
+rosbuild_add_executable(rectifier src/rectifier.cpp)
+rosbuild_add_executable(stitching_detailed src/stitching_detailed.cpp)
+rosbuild_add_executable(disk_stitching src/stitching_disk.cpp)

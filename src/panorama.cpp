@@ -14,10 +14,10 @@
 #include <opencv2/stitching/stitcher.hpp>
 
  
-void cv::detail::FeaturesFinder::find(const Mat& image, ImageFeatures& features){
+//void cv::detail::FeaturesFinder::find(const Mat& image, ImageFeatures& features){
 
 
-}
+//}
 
  
 int main(int argc, char* argv[])

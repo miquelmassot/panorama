@@ -10,6 +10,8 @@
   <url>http://ros.org/wiki/panorama</url>
   <depend package="roscpp" />
   <depend package="opencv2" />
+  <depend package="image_geometry" />
+  <depend package="camera_calibration_parsers" />
 
 </package>
 
